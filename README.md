@@ -1,2 +1,2 @@
 # PythonForMATLABUsers
-Introductory MATLAB -> Python introductory talk given at MIT
+Introductory MATLAB -> Python 3.5+ introductory talk given at MIT
