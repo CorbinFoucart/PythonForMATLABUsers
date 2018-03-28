@@ -1,7 +1,7 @@
 # PythonForMATLABUsers
 
 ### Introductory MATLAB -> Python 3.5+ introductory talk given at MIT, 2018
-Note: this talk assumes a UNIX machine (MacOSX, Linux); if you use windows, you're on your own.
+Note: this talk assumes a UNIX machine (MacOSX, Linux); if you use windows, you're on your own (Stefano's advice: Create a Ubuntu virtual machine in Windows).
 
 "'Clever' is not a compliment in the Python community." - Alex Martelli
 
