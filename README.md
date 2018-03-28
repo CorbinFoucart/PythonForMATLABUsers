@@ -12,15 +12,30 @@ Setting up a virtual environment:
 ```
 (venv name) $ 
 ```
+in your terminal
+
 4. when done, run `deactivate` to leave the virtual environment
 
-For jupyter notebooks in a virtual environment:
+Setting up jupyter notebooks in a virtual environment:
+
+Exit any virtual environment. Make sure that `jupyter` is installed on your system with `which jupyter`. If nothing is found, install it with
+
+```
+$ python3 -m pip install --upgrade pip
+$ python3 -m pip install jupyter
+```
+
+Once it is installed, running `jupyter notebook` will launch Jupyter, but the libraries will be your
+system's, not the libraries installed in your virtual environment. To use Jupyter within a virtual
+environment, we will need to activate the virtual environment and install a specific iPython kernel to
+the virtual environment. This step only needs to be done once.
 
 1. activate your virtual environment
 2. `pip install ipykernel`
-3. `ipython kernel install --user --name=[venv_name]`
+3. `ipython kernel install --user --name=your_venv_name`
 
-Then when you run `jupyter notebook` from console, select kernel->change kernel and choose the [venv_name] one
+Now, when you run `jupyter notebook` from console, select kernel->change kernel and choose the one
+named `your_venv_name`.
 
 
 
