@@ -1,9 +1,9 @@
 # PythonForMATLABUsers
 
-"'Clever' is not a compliment in the Python community." - Alex Martelli
+### Introductory MATLAB -> Python 3.5+ introductory talk given at MIT, 2018
+Note: this talk assumes a UNIX machine (MacOSX, Linux); if you use windows, you're on your own.
 
-Introductory MATLAB -> Python 3.5+ introductory talk given at MIT
-Note: this talk is aimed at UNIX machines (MacOSX, Linux); if you use windows, you're on your own.
+"'Clever' is not a compliment in the Python community." - Alex Martelli
 
 ### Setting up a virtual environment:
 1. install Python 3.5+ on your machine, find the location of the binary 
