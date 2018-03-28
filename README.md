@@ -8,7 +8,7 @@ Note: this talk assumes a UNIX machine (MacOSX, Linux); if you use windows, you'
 ### Setting up a virtual environment:
 1. install Python 3.5+ on your machine, find the location of the binary 
 2. set up a virtual environment using the Python venv module by following the directions here: https://docs.python.org/3/tutorial/venv.html -- note that you can substitute your Python 3 binary for "python3"
-3. activate the virtual environment with `source [venv dir]/bin/activate; you should see 
+3. activate the virtual environment with `source [venv dir]/bin/activate`; you should see 
 ```
 (venv name) $ 
 ```
