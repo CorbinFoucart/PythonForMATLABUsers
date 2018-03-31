@@ -3,8 +3,6 @@
 ### Introductory MATLAB -> Python 3.5+ introductory talk given at MIT, 2018
 Note: this talk assumes a UNIX machine (MacOSX, Linux); if you use windows, you're on your own.
 
-"'Clever' is not a compliment in the Python community." - Alex Martelli
-
 ### Setting up a virtual environment:
 1. install Python 3.5+ on your machine, find the location of the binary 
 2. set up a virtual environment using the Python venv module by following the directions here: https://docs.python.org/3/tutorial/venv.html -- note that you can substitute your Python 3 binary for "python3"
