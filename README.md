@@ -3,7 +3,7 @@
 ### Introductory MATLAB -> Python 3.5+ introductory talk given at MIT, 2018
 Note: this talk assumes a UNIX machine (MacOSX, Linux); if you use windows, you're on your own.
 
-### Setting up a virtual environment:
+### 0.1 Setting up a virtual environment:
 1. install Python 3.5+ on your machine, find the location of the binary 
 2. set up a virtual environment using the Python venv module by following the directions here: https://docs.python.org/3/tutorial/venv.html -- note that you can substitute your Python 3 binary for "python3"
 3. activate the virtual environment with `source path/to/[your_venv_name]/bin/activate`; you should see 
@@ -14,7 +14,7 @@ in your terminal
 
 4. when done, run `deactivate` to leave the virtual environment
 
-### Setting up jupyter notebooks in a virtual environment:
+### 0.2 Setting up jupyter notebooks in a virtual environment:
 
 Exit any virtual environment. Make sure that `jupyter` is installed on your system with `which jupyter`. If nothing is found, install it with
 
@@ -55,5 +55,5 @@ you should see
 }
 ```
 
-chances are, your path to the python binary or "language are incorrect. You can manually fix them
+chances are, your path to the python binary or "language" are incorrect. You can manually fix them
 and save the file. Reactivate your virtualenv, run `jupyter notebook` again and restart the kernel.
