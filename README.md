@@ -57,3 +57,14 @@ you should see
 
 chances are, your path to the python binary or "language" are incorrect. You can manually fix them
 and save the file. Reactivate your virtualenv, run `jupyter notebook` again and restart the kernel.
+
+### 0.3 Modifying the `PYTHONPATH` variable in a virtual environment
+
+In the case of larger projects, you may want your `PYTHONPATH` variable to point to the top level project
+directory. In that case, navigate to [venv_dir]/bin/activate and modify the file, adding the line
+
+```
+export PYTHONPATH="/top/level/directory"
+```
+
+to the end. Now `echo $PYTHONPATH` should show the top level directory upon restarting the virtual environment.
