@@ -68,3 +68,7 @@ export PYTHONPATH="/top/level/directory"
 ```
 
 to the end. Now `echo $PYTHONPATH` should show the top level directory upon restarting the virtual environment.
+
+### 0.4 Making paths discoverable using Conda
+
+If using a conda environment, the `PYTHONPATH` solution above is not good practice. Instead, navigate to the `site-packaes` folder, e.g., `anaconda3/envs/[your_conda_env]/lib/python2.7/site-packages`, and add a file with a `.pth` extension. This is a newline-separated list of directories to be added to `sys.path` upon startup of the conda env. 
