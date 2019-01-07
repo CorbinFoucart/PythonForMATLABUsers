@@ -1,5 +1,5 @@
 
-# micro-assignment 1: `NumPy` and reading a documentation
+# micro-assignment 1: `NumPy` and reading documentation
 Learning to read documentation is a skill that's just as important (if not more
 important) than writing new code. This assignment can be thought of as a way to
 practice working with `NumPy` and also to practice reading and understanding
