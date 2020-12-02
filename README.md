@@ -75,6 +75,6 @@ If using a conda environment, the `PYTHONPATH` solution above is not good practi
 
 ### 0.5 Adding a jupyter kernel for a Conda env
 ```
-ipython kernel install --user --name=[name_of_env]
+python -m ipykernel install --user --name=[name_of_env]
 conda install nb_conda_kernels
 ```
