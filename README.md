@@ -79,3 +79,16 @@ conda install ipykernel
 python -m ipykernel install --user --name=[name_of_env]
 conda install nb_conda_kernels
 ```
+
+### 0.6 Running a jupyter server remotely with a local notebook
+We will use port 1234 on the remote machine without loss of generality. On the remote machine, start a jupyter server
+```
+jupyter notebook --no-browser --port 1234
+```
+The server will start, and will provide a login token; it will say `Copy/paste this URL into your browser when you connect for the first time, to login with a token: [the login token, copy and paste this]`. 
+
+On the local machine, connect to that server by running
+```
+ssh -NL 1234:localhost:1234 username@ip_address
+```
+which will prompt for a password / login credentials. Once logged in, open a browser and paste the login token in.
