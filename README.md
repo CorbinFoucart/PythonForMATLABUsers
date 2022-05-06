@@ -92,3 +92,18 @@ On the local machine, connect to that server by running
 ssh -NL 1234:localhost:1234 username@ip_address
 ```
 which will prompt for a password / login credentials. Once logged in, open a browser and paste the login token in.
+
+#### Manan's solution for a remote machine with a static IP 
+SSH into remote machine and do `jupyter notebook password` and enter a strong
+password. This makes the notebook's session password protected so that we can
+run it in a publically accessible way.  The ip address 0.0.0.0 means "serve to all external IP addresses on that port". 
+
+So we run the notebook with 
+```
+jupyter notebook --no-browser --ip 0.0.0.0 --port 1234
+```
+
+Then we connect to it on the remote machine by opening a browser and going to 
+`[static_ip_address]:[port]` e.g., `foucartc.mit.edu:1234`.
+
+
