@@ -106,4 +106,9 @@ jupyter notebook --no-browser --ip 0.0.0.0 --port 1234
 Then we connect to it on the remote machine by opening a browser and going to 
 `[static_ip_address]:[port]` e.g., `foucartc.mit.edu:1234`.
 
+#### port forwarding for notebooks on a remote compute node without internet access
+For when you have a back-end compute node without access to internet, but connects to a front-end node (mseas.mit.edu) with internet access.
+- start a juypyter notebook server on the back-end node
+- log on to front-end node and create an ssh tunnel with `ssh -NL [8888]:localhost:[8888] [ibamd-compute-0-1]` (or random port number above 2048)
+- connect to the forwarded server on the remote machine with `ssh -NL [8888]:localhost:[8888] mseas.mit.edu`
 
